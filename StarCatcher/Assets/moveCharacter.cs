@@ -2,7 +2,6 @@
 using System.Collections;
 
 public class moveCharacter : MonoBehaviour {
-
     //Character controller component with a move method (private) - identifyer is myCC
     private CharacterController myCC;
     //Temp var of datatype vector3 to move the character (TempPos = temporary position)
@@ -14,10 +13,36 @@ public class moveCharacter : MonoBehaviour {
     //jump
     public float jumpSpeed = 1;
 
+
     //public int jumpCountBase = 2; (to do a power-up jump)
 
     public int jumpCount = 0;
     public int jumpCountMax = 2;
+
+    public int slideDuration = 100;
+    public float slideTime = 0.01f;
+
+    IEnumerator Slide()
+    {
+        //set a temp var to the value of slideDuration
+        int durationTemp = slideDuration;
+        float speedTemp = speed;
+        speed += speed;
+        //While loop runs "while" the slideDuration is greater than 0
+        while(slideDuration > 0)
+        {
+            //Decrement the slideDuration
+            slideDuration--;
+            //yield "holds the coroutine"
+            //return "sends" to the coroutine to do an operation while yielding
+            //new creates an instance of an object
+            //WaitForSeconds is an object that waits for a duration of time
+            yield return new WaitForSeconds(slideTime);
+        }
+
+        speed = speedTemp;
+        slideDuration = durationTemp;
+    }
 
 	// Use this for initialization
 	void Start () {
@@ -42,6 +67,13 @@ public class moveCharacter : MonoBehaviour {
             //adding the jumpSpeed var to the tempPos var
             tempPos.y = jumpSpeed;
         }
+        //Start Sliding
+        if(Input.GetKey(KeyCode.RightArrow) & Input.GetKeyDown(KeyCode.S))
+    {
+        //StartCoroutine is a function that calls coroutine. Use the coroutine in the argument
+        StartCoroutine(Slide());
+    }
+
         //test if the character controller is grounded
         if (myCC.isGrounded)
         {
