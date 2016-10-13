@@ -2,8 +2,10 @@
 using System.Collections;
 using System;
 
-public class UserInput : MonoBehaviour {
+public class UserInputScript : MonoBehaviour {
+    
 
+    
     public static Action<KeyCode> UserInput;
 
     void Update()

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CharacterFlipArt : MonoBehaviour
+public class CharacterFlip : MonoBehaviour
 {
 
     public Transform characterArt;
@@ -35,6 +35,6 @@ public class CharacterFlipArt : MonoBehaviour
 
     void Start()
     {
-        UserInput.UserInput += FlipCharacter;
+        UserInputScript.UserInput += FlipCharacter;
     }
 }

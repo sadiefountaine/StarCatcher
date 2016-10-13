@@ -12,9 +12,15 @@ public class MoveCharacter : MonoBehaviour {
     public int jumpCount = 0;
     public int jumpCountMax = 2;
 
+    //void StartGameHandler()
+    //{
+        //MoveUsingArrowKeys.MoveOnArrows += Move;
+        //GameControl.StartGame -= StartGameHandler;
+    //}
 	// Use this for initialization
 	void Start () {
         myCC = GetComponent<CharacterController>();
+        //GameControl.StartGame += StartGameHandler;
 	}
 	
 	// Update is called once per frame
