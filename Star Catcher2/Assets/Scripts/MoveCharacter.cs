@@ -12,6 +12,7 @@ public class MoveCharacter : MonoBehaviour {
     public int jumpCount = 0;
     public int jumpCountMax = 2;
 
+    //Missed the start of this so i just found another way to do it. I hope.
     //void StartGameHandler()
     //{
         //MoveUsingArrowKeys.MoveOnArrows += Move;
