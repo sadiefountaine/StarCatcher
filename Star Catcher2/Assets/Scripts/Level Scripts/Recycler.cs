@@ -15,7 +15,7 @@ public class Recycler : MonoBehaviour {
         if (RecycleAction != null && canBeRecycled)
             RecycleAction(this);
 	}
-	void onTriggerEnter()
+	void OnTriggerEnter()
     {
         canBeRecycled = true;
         Start();

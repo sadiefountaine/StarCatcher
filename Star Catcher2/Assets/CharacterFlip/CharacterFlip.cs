@@ -37,4 +37,8 @@ public class CharacterFlip : MonoBehaviour
     {
         UserInputScript.UserInput += FlipCharacter;
     }
+    void OnDestroy()
+    {
+        UserInputScript.UserInput -= FlipCharacter;
+    }
 }
