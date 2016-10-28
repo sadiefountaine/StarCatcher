@@ -23,6 +23,8 @@ public class RecycleLevelObject_Background: MonoBehaviour
     void OnTriggerEnter()
     {
         i = UnityEngine.Random.Range(0, recyclableList.Count - 1);
+        newLocation.y = 93;
+        newLocation.z = 40;
         newLocation.x = StaticVars_Background.nextSectionPosition;
         recyclableList[i].mesh.position = newLocation;
         StaticVars_Background.nextSectionPosition += StaticVars_Background.distance;
