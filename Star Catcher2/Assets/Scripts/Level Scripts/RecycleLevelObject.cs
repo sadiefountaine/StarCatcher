@@ -1,10 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
-
 using System.Collections.Generic;
 using System;
 
-public class RecycleLevelObject : MonoBehaviour {
+public class RecycleLevelObject : MonoBehaviour
+{
 
     private Vector3 newLocation;
     public List<Recycler> recyclableList;
@@ -23,6 +23,8 @@ public class RecycleLevelObject : MonoBehaviour {
     void OnTriggerEnter()
     {
         i = UnityEngine.Random.Range(0, recyclableList.Count - 1);
+        newLocation.y = -0.1f;
+        newLocation.z = -0.1f;
         newLocation.x = StaticVars.nextSectionPosition;
         recyclableList[i].cube.position = newLocation;
         StaticVars.nextSectionPosition += StaticVars.distance;
