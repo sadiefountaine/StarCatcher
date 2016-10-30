@@ -1,0 +1,59 @@
+Initialize engine version: 5.4.1f1 (649f48bbbf0f)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics Family (ID=0xa16)
+    Vendor:   Intel
+    VRAM:     1112 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Sadie\StarCatcher\Star Catcher2\StarCatcher_GameTest_Me_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Sadie\StarCatcher\Star Catcher2\StarCatcher_GameTest_Me_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Sadie\StarCatcher\Star Catcher2\StarCatcher_GameTest_Me_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Sadie\StarCatcher\Star Catcher2\StarCatcher_GameTest_Me_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Sadie\StarCatcher\Star Catcher2\StarCatcher_GameTest_Me_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Sadie\StarCatcher\Star Catcher2\StarCatcher_GameTest_Me_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Sadie\StarCatcher\Star Catcher2\StarCatcher_GameTest_Me_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Sadie\StarCatcher\Star Catcher2\StarCatcher_GameTest_Me_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Sadie\StarCatcher\Star Catcher2\StarCatcher_GameTest_Me_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\Sadie\StarCatcher\Star Catcher2\StarCatcher_GameTest_Me_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.202 seconds
+Platform assembly: C:\Users\Sadie\StarCatcher\Star Catcher2\StarCatcher_GameTest_Me_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Sadie\StarCatcher\Star Catcher2\StarCatcher_GameTest_Me_Data\Managed\System.dll (this message is harmless)
+desktop: 2160x1440 59Hz; virtual: 2160x1440 at 0,0
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 3.398925 ms
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 11a8 -> priority: 1 
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.635905 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 978.
+Total: 0.429843 ms (FindLiveObjects: 0.054602 ms CreateObjectMapping: 0.045160 ms MarkObjects: 0.318174 ms  DeleteObjects: 0.011084 ms)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at SendToRecycler.Start () [0x00000] in <filename unknown>:0 
+  at SendToRecycler.OnTriggerEnter () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.696383 ms
+
+Unloading 116 unused Assets to reduce memory usage. Loaded Objects now: 245.
+Total: 0.984904 ms (FindLiveObjects: 0.036949 ms CreateObjectMapping: 0.045160 ms MarkObjects: 0.293131 ms  DeleteObjects: 0.608842 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.287161 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 979.
+Total: 0.951239 ms (FindLiveObjects: 0.140407 ms CreateObjectMapping: 0.087446 ms MarkObjects: 0.696289 ms  DeleteObjects: 0.025864 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.619200 ms
+
+Unloading 116 unused Assets to reduce memory usage. Loaded Objects now: 245.
+Total: 0.967661 ms (FindLiveObjects: 0.028738 ms CreateObjectMapping: 0.029148 ms MarkObjects: 0.330901 ms  DeleteObjects: 0.578051 ms)
+
