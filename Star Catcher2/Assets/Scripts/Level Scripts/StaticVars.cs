@@ -6,4 +6,6 @@ public class StaticVars {
     public static float nextSectionPosition = 105;
 
     public static float startPosition = nextSectionPosition;
+
+    //public static int starCount = 0;
 }

@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
 public class CloneStar : MonoBehaviour {
 
     public Transform[] spawnPoints;
@@ -8,6 +9,8 @@ public class CloneStar : MonoBehaviour {
     public float spawnFrequency = 1;
     //just spawns until we tell it to stop
     public bool canSpawnStars = true;
+
+    //public GameScore myScore;
 
     private int i = 0;
 
@@ -28,5 +31,16 @@ public class CloneStar : MonoBehaviour {
 
 	void Start () {
         StartCoroutine(SpawnStars());
+
+        //myScore = new GameScore();
 	}
+
+    //void OnTriggerEnter()
+    //{
+        //StaticVars.starCount += 1;
+
+        //myScore.updateScore();
+
+        //Destroy(gameObject);
+    //}
 }
