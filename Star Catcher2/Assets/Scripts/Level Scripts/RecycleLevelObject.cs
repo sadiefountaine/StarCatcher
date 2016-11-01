@@ -22,7 +22,7 @@ public class RecycleLevelObject : MonoBehaviour
 
     void OnTriggerEnter()
     {
-        i = UnityEngine.Random.Range(0, recyclableList.Count - 1);
+        i = UnityEngine.Random.Range(0, recyclableList.Count-1);
         newLocation.y = -0.1f;
         newLocation.z = -0.1f;
         newLocation.x = StaticVars.nextSectionPosition;
