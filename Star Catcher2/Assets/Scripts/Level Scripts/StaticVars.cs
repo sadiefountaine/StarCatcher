@@ -8,4 +8,6 @@ public class StaticVars {
     public static float startPosition = nextSectionPosition;
 
     //public static int starCount = 0;
+
+    public static int score;
 }
