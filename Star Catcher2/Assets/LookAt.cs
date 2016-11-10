@@ -3,10 +3,7 @@ using System.Collections;
 
 public class LookAt : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
+    public Transform player;
 	
 	// Update is called once per frame
 	void Update () {
