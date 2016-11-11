@@ -42,4 +42,4 @@ public class Grounding : MonoBehaviour {
 	}
 }
 
-//if you add this script to the cube then it makes a character controller because of the Required Component
+//if you add this script to the cube then it makes a character controller because of the Required Component (at the top). Cool!
