@@ -17,6 +17,15 @@ public class Conventions_Syntax : MonoBehaviour {
     {
         Debug.Log("This is a statement. It will only be called once.");
 	    //Start only uses statments inside of it one time.
+
+        //The dot operator (such as the period in between Debug and Log above) is a stop inbetween lines.
+        //It allows you to access separate elements of the line of code.
+
+        //The semicolon is used to stop statements.
+        //Anything using a curly brace doesn't need semicolons.
+        
+        //Indenting helps readability. It isn't necessary, but it's nice to look at.
+
 	}
 	
 	
@@ -25,7 +34,7 @@ public class Conventions_Syntax : MonoBehaviour {
         /*
         Debug.Log("This will repeat until the game is stopped");
         Debug.Log("Hey look, a block of code!");
-        Debug.Log("This block of code will also repeat into the infinities.");
+        Debug.Log("This block of code will also repeat into the infinities because it is in Update.");
         */
 
         //Update will run that statment inside of it over and over again for every frame.
@@ -34,5 +43,6 @@ public class Conventions_Syntax : MonoBehaviour {
         //If you would like to comment out a large section of code, use the multi-line comment. An example of this is on the block of code above.
 
         //When debuging, you can comment out issues to help figure out what is going wrong and to get your stuff back into working order.
+        //Comments are ignored by code, so you can literally type whatever you want and it will not affect your game.
     }
 }
