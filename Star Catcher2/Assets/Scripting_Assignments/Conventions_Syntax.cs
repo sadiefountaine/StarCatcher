@@ -16,7 +16,8 @@ public class Conventions_Syntax : MonoBehaviour {
 	void Start ()
     {
         Debug.Log("This is a statement. It will only be called once.");
-	    //Start only uses statments inside of it one time.
+	    
+        //Start only uses statments inside of it one time.
 
         //The dot operator (such as the period in between Debug and Log above) is a stop inbetween lines.
         //It allows you to access separate elements of the line of code.
@@ -40,7 +41,7 @@ public class Conventions_Syntax : MonoBehaviour {
         //Update will run that statment inside of it over and over again for every frame.
 
         //Comments are useful for making notes, giving directions, and helping during the debug stage.
-        //If you would like to comment out a large section of code, use the multi-line comment. An example of this is on the block of code above.
+        //If you would like to comment out a large section of code, use the multi-line comment. An example of this is on the block of code above. Now the block of code won't run because Unity can't see it.
 
         //When debuging, you can comment out issues to help figure out what is going wrong and to get your stuff back into working order.
         //Comments are ignored by code, so you can literally type whatever you want and it will not affect your game.
