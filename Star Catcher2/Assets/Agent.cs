@@ -15,7 +15,7 @@ public class Agent : MonoBehaviour {
 	
 	
 	void Update () {
-        //look up how to do a jump in the animator bc I missed how to do it in class.\
+        //look up how to do a jump in the animator bc I missed how to do it in class.
         //jump up and a jump down animation = then you get a hang time and the animation is dynamic.
         myAgent.destination = player.position;
         if (myAgent.isOnOffMeshLink)
