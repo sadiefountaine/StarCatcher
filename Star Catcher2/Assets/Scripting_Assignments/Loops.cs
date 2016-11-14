@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+﻿/*using UnityEngine;
 using System.Collections;
 
 public class Loops : MonoBehaviour {
@@ -25,7 +25,7 @@ public class Loops : MonoBehaviour {
 
     }
 
-    /*
+    //NOTES:
     private int enemyDistance = 0;
 	
 	void Start ()
@@ -64,5 +64,6 @@ public class Loops : MonoBehaviour {
             //this if set up makes it so the code isn't run through everything over and over, but just sees the statement and then goes back.
         }
     }
-    */
+    
 }
+*/
