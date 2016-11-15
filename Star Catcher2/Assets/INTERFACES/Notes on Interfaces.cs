@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+﻿/*using UnityEngine;
 using System.Collections;
 
 public class NotesonInterfaces : MonoBehaviour {
@@ -13,3 +13,4 @@ public class NotesonInterfaces : MonoBehaviour {
 	
 	}
 }
+*/
