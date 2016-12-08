@@ -3,13 +3,22 @@ using System.Collections;
 
 public class Variables : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+
+    public int stars = 5;
+    public int starFallSpeed = 10;
+    private int starSpeed;
+    int star = 8;
+
+    void Start()
+    {
+
+    }
+
+    void Update()
+    {
+
+    }
+
+
+    
 }
