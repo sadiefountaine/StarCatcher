@@ -20,7 +20,7 @@ public class Timer : MonoBehaviour
         timeText.text = "Time: " + time.ToString("F");
         if (time <= 0)
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(3);
         }
     }
 }

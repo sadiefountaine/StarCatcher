@@ -10,11 +10,6 @@ public class KillBunny : MonoBehaviour {
 	}
 	void OnTriggerEnter()
     {
-        SceneManager.LoadScene (2);
+        SceneManager.LoadScene (3);
     }
-
-	// Update is called once per frame
-	void Update () {
-	
-	}
 }
