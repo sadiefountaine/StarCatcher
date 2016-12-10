@@ -6,6 +6,8 @@ public class AnimationControl : MonoBehaviour {
     Animator anim;
     int jumpHash = Animator.StringToHash("PlayerJump");
 
+    int runHash = Animator.StringToHash("PlayerRun");
+
 
 	// Use this for initialization
 	void Start ()
@@ -16,11 +18,19 @@ public class AnimationControl : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-        float move = Input.GetAxis("Vertical");
-
         if (Input.GetKeyDown(KeyCode.Space))
         {
             anim.SetTrigger(jumpHash);
+        }
+
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            anim.SetTrigger(runHash);
+        }
+
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            anim.SetTrigger(runHash);
         }
 	}
 }
