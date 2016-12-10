@@ -23,12 +23,12 @@ public class AnimationControl : MonoBehaviour {
             anim.SetTrigger(jumpHash);
         }
 
-        if (Input.GetKey(KeyCode.RightArrow))
+        else if (Input.GetKey(KeyCode.RightArrow))
         {
             anim.SetTrigger(runHash);
         }
 
-        if (Input.GetKey(KeyCode.LeftArrow))
+        else if (Input.GetKey(KeyCode.LeftArrow))
         {
             anim.SetTrigger(runHash);
         }
