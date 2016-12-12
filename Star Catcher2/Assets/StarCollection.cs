@@ -25,6 +25,12 @@ public class StarCollection : MonoBehaviour {
            count = count + 1;
            SetCountText();
         }
+
+        if (other.gameObject.CompareTag("Drop"))
+        {
+            count = count - 1;
+            SetCountText();
+        }
     }
 
     void SetCountText()
