@@ -10,11 +10,11 @@ public class StarCollection : MonoBehaviour {
     public AudioClip deathClip;
 
     AudioSource playerAudio;
-    //bool isDead;
+    bool isDead;
     bool damaged;
 
-	void Start () {
-        //count = 0;
+	void Start ()
+    {
         SetCountText();
 	}
 
@@ -35,18 +35,18 @@ public class StarCollection : MonoBehaviour {
         currentScore -= amount;
         playerAudio.Play();
 
-        /*if (currentScore <= 0 && !isDead)
+        if (currentScore <= 0 && !isDead)
         {
             Death ();
-        }*/
+        }
     }
 
-    /*void Death()
+    void Death()
     {
         isDead = true;
         playerAudio.clip = deathClip;
         playerAudio.Play();
-    }*/
+    }
 
     void OnTriggerEnter (Collider other)
     {
@@ -54,21 +54,13 @@ public class StarCollection : MonoBehaviour {
         {
            other.gameObject.SetActive(false);
            count = count + 1;
-           //SetCountText();
         }
         else if (other.gameObject.CompareTag("Drop"))
         {
             count = count - 1;
-            //SetCountText();
         }
 
         SetCountText();
-
-        //if (other.gameObject.CompareTag("Drop"))
-        //{
-            //count = count - 1;
-            //SetCountText();
-        //}
     }
 
     void SetCountText()
