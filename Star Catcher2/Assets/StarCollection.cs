@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class StarCollection : MonoBehaviour {
 
@@ -22,6 +23,10 @@ public class StarCollection : MonoBehaviour {
         else if (other.gameObject.CompareTag("Drop"))
         {
             count = count - 1;
+            if (count < 0)
+            {
+                SceneManager.LoadScene(3);
+            }
         }
 
         SetCountText();
