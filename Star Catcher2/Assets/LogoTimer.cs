@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class LogoTimer : MonoBehaviour
 {
-    float timeAmount = 5;
+    public float timeAmount = 5;
     float time;
     public Timer timeText;
 

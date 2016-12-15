@@ -30,6 +30,10 @@ public class StarCollection : MonoBehaviour {
         }
 
         SetCountText();
+
+        //Play Sound
+
+
     }
 
     void SetCountText()
