@@ -19,6 +19,10 @@ public class StarCollection : MonoBehaviour {
         {
            other.gameObject.SetActive(false);
            count = count + 1;
+            
+            //Play Sound
+            AudioSource source = GetComponent<AudioSource>();
+            source.Play();
         }
         else if (other.gameObject.CompareTag("Drop"))
         {
@@ -30,11 +34,6 @@ public class StarCollection : MonoBehaviour {
         }
 
         SetCountText();
-
-        //Play Sound
-        AudioSource source = GetComponent<AudioSource>();
-        source.Play();
-
     }
 
     void SetCountText()
