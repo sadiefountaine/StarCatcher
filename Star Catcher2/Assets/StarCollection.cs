@@ -32,7 +32,8 @@ public class StarCollection : MonoBehaviour {
         SetCountText();
 
         //Play Sound
-
+        AudioSource source = GetComponent<AudioSource>();
+        source.Play();
 
     }
 
